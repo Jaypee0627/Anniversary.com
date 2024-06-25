@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Scrapbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Our First Anniversary</h1>
+            <p>A journey through our beautiful moments together</p>
+        </header>
+
+        <section class="photo-section">
+            <h2>I Love You❤️</h2>
+            <img src="1.jpg" alt="iloveyou" class="photo">
+            <p>Remembering the day with you. It was a magical moment!</p>
+        </section>
+
+        <section class="photo-section">
+            <h2>Spending Time Together</h2>
+            <img src="2.jpg" alt="Spending time together" class="photo">
+            <p>Every moment spent with you is like a beautiful dream come true.</p>
+        </section>
+
+        <section class="notes-section">
+            <h2>My Love Notes</h2>
+            <textarea id="notes" placeholder="Write your love notes here..."></textarea>
+            <button onclick="saveNotes()">Save Notes</button>
+        </section>
+
+        <section class="view-photos-section">
+            <button onclick="toggleAllPhotos()">See All Photos <br>Click here👆</button>
+            <div id="all-photos" class="hidden">
+                <img src="3.jpg" alt="Our first meet" class="photo">
+                <img src="4.jpg" alt="Spending time together" class="photo">
+                <img src="6.jpg" alt="Spending time together" class="photo">
+                <img src="7.jpg" alt="Spending time together" class="photo">
+                <img src="8.jpg" alt="Spending time together" class="photo">
+                <img src="9.jpg" alt="Spending time together" class="photo">
+                <img src="10.jpg" alt="Spending time together" class="photo">
+                <img src="11.jpg" alt="Spending time together" class="photo">
+            </div>
+        </section>
+
+        <section class="additional-notes-section">
+            <h2>More Love Notes</h2>
+            <div id="love-notes-container"></div>
+            <textarea id="new-note" placeholder="Add a new love note..."></textarea>
+            <button onclick="addNote()">Add Note</button>
+        </section>
+
+        <section class="videos-section">
+            <h2>Videos</h2>
+            <p>wag na panoodin at pangit🙁</p>
+            <video controls class="video">
+                <source src="13.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls class="video">
+                <source src="12.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section class="love-text-section">
+            <h2>My Love Letter</h2>
+            <textarea id="love-text" placeholder="Write your love letter here..."></textarea>
+            <button onclick="saveLoveText()">Save Love Letter</button>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
